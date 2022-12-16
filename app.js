@@ -235,3 +235,227 @@ const array3 = ["a", "b", "c"];
 
 const reversed1 = array3.slice().reverse();
 console.log(reversed1);
+
+//!26 Spread Operator
+//spread  operator is used to spread the array and object elements
+// it is used to merge of two arrays
+
+//!27 What are the different data types in javascript
+
+// Number, Boolean, String, Null, Undefined, BigInt, Symbol
+
+//! 28 How can you create an Object in JavaScript
+
+// let obj = {
+//     name: "krishna",
+//     id:123,
+// }
+
+// let obj1 = {
+//     name: "kumar",
+//     id: 22,
+//     technologies: ["html", "css", "js", "react"],
+//     preferences: {
+//         name: "ali",
+//         id:12,
+//     }
+// }
+// console.log(obj1);
+
+// !29 What is typeof operator in javascript
+
+// var a = 10;//NUmber
+// var a = "10";//String
+// var a = null;//Null is an object
+// var a = true;//boolean
+// var a;//undefined
+// console.log(typeof (a));
+//!30 What is d/f b/w "==" and "===" Operators?
+
+// let a = 10;
+// let b = "10";
+// if (a == b) {
+//     console.log("Values are Matching");
+// } else {
+//     console.log("Values are not matching");
+// }
+// if (a === b) {
+//   console.log("Values are Matching");
+// } else {
+//   console.log("Values are not matching");
+// }
+
+//!31  What would be the result of 13+6+"2"?
+// console.log(13 + 6 + "2");//192
+// console.log(13 + 6 + 2);//21
+
+//!32  What do you mean by null in javascript
+ let x = null;
+ console.log(typeof (x));//object
+console.log(x);//null
+ 
+//!33 How do detect clients operating system
+console.log(navigator.language);//en-US
+console.log(navigator.onLine);//true
+console.log(navigator.platform);//Win32
+
+// !34  Of what Javascript type is an Array
+// let a = [10, 20, 30];
+// let b = ["10", "29"];
+// let c={name:"Manu",id:12}
+// console.log(typeof (a));//object
+// console.log(typeof (b));//object
+// console.log(typeof (c));//object
+
+//!35  What property tells you the length of a Javascript array?
+
+// let a = [10, 20, 30];
+// let b = [1, 2, 3, 3, 4, 5];
+
+// console.log(a.length);//3
+// console.log(b.length);//6
+
+
+//!36 What does array.shift() method returns
+
+// let a = [10, 20, 30, 40];
+// console.log(a.shift());//[10]
+// console.log(a);//[10,20,30,40]
+
+//!37 Explain Array.push() method
+// let a = [10, 20, 30, 40];
+// console.log(a.push(40, 50));
+// console.log(a);// [10, 20, 30, 40, 40, 50]
+
+//!38  Explain the Array.pop() method
+
+// let a = [10, 20, 30, 40];
+// console.log(a.pop());//40
+// console.log(a);// [10, 20, 30]
+
+//!39 Explain the Array.unshift() method
+
+// let a = [10, 20, 30, 40];
+// console.log(a.unshift(50));//5
+// console.log(a);//[50, 10, 20, 30, 40]
+// console.log(a.length);//5
+
+//!40 Explain the template literals in ES6
+
+// let a = 'krishna';
+// let b = 'Kumar'
+// let c = `${a}${b}`;
+// console.log(c);//KrishnaKumar
+
+//!41 What is the output of the following code sample
+
+// var y = 1;
+// if (function f() { }) {
+//     y += typeof typeof f;//1string
+//      y += typeof f;//1undefined
+// }
+// console.log(y);
+
+//!42 What is NaN ? What is its type ?
+// console.log(typeof NaN);//Number
+// console.log(typeof "number");//string
+// console.log(typeof NaN === "number");//true
+// console.log(typeof (NaN === "number"));//boolean
+// console.log(NaN === "number");//false
+// console.log(NaN == NaN);//false
+
+//!43 What is the output of the following code sample
+
+//The below 2 functions return the same output;
+
+// function c() {
+//     return {
+//         name:"Krishna"
+//     }
+// }
+// function d() {
+//     return {
+//         name: "Krishna"
+//     }
+// }
+// console.log(c());//Krishna
+// console.log(d());//Krishna
+
+// //!or======
+
+function c() {
+    return
+    {
+    name:"krishna"
+    }
+}
+function d() {
+    return
+    {
+        name: "Krishna"
+    }
+}
+console.log(c());
+console.log(d());
+
+//!44 What will the code below output
+
+console.log(false == '0');//true
+console.log(false === '0');//false
+
+//!45 What's the output of below code
+
+console.log(1 < 2 < 3);//true
+console.log(3 > 2 > 1);//false
+
+//!46. How do you clone an object
+
+let test = {
+    name: "Krishna",
+    id: 12,
+    salary:1000,
+}
+let task = {
+    completed:"yes",
+}
+console.log(test)//{name: 'Krishna', id: 12, salary: 1000}
+
+let testclone = Object.assign({}, test);
+console.log(testclone)//{name: 'Krishna', id: 12, salary: 1000}
+
+let testclone1 = Object.assign(task, test);
+console.log(testclone1);//{completed: 'yes', name: 'Krishna', id: 12, salary: 1000}
+
+//!47. Which keyword are used to handle the exceptions
+
+// try {
+    
+// } catch (error) {
+    
+// }
+// finally {
+    
+// }
+
+
+//!48. What is variable typing
+
+// let i = 2;//integer
+// i = "krishna"//string
+// i = true;//boolean
+// console.log(i);
+
+//!49. How are object properties are assigned
+
+// let obj = {}
+
+// obj.name = "Krishna";
+// obj["lastname"] = "Kumar";
+
+// console.log(obj);//{name: 'Krishna', lastname: 'Kumar'}
+
+//!50. Is JavaScript is case sensitive
+
+// Because inbuilt methods in Javascript
+// getElementById
+// getElementByClassName...... js is case sensitive
