@@ -48,7 +48,7 @@ let arr = ["jan", "feb", "jan", "feb", "feb", "march"];
 let count = arr.reduce((acc, value) => {
     return {...acc,[value]:(acc[value]||0)+1}
 },"")
-console.log(count);
+console.log(count); 
 
 //!5 to check the entered number is integer or not
 
@@ -360,7 +360,7 @@ console.log(navigator.platform);//Win32
 // console.log(typeof NaN);//Number
 // console.log(typeof "number");//string
 // console.log(typeof NaN === "number");//true
-// console.log(typeof (NaN === "number"));//boolean
+`// console.log(typeof (NaN === "number"));//boolean
 // console.log(NaN === "number");//false
 // console.log(NaN == NaN);//false
 
@@ -458,4 +458,4 @@ console.log(testclone1);//{completed: 'yes', name: 'Krishna', id: 12, salary: 10
 
 // Because inbuilt methods in Javascript
 // getElementById
-// getElementByClassName...... js is case sensitive
+// getElementByClassName...... js is case sensitive`
